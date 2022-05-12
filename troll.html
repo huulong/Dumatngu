@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        h3{
+            text-align: center;
+        }
+        .box-love{
+  background: url('https://trongrangimplant.vn/rs/?w=500&src=https://trongrangimplant.vn/wp-content/uploads/2019/01/rang-khenh-dep-12.jpg');
+    width: 500px;
+  height: 300px;
+  position: relative;
+}
+.box{
+ position: absolute;
+  top: 40%;
+  left: 35%
+}
+button{
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  background: red;
+  color: #fff;
+  outline:none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+button:hover{
+  cursor:pointer;
+  opacity: 0.6;
+}
+span{
+   position: absolute;
+  top: 30%;
+  left: 25%;
+  text-align: center;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.move{
+        transform: translate(-200%, -200% );
+         transition: 0.01s;
+  }
+     
+    </style>
+    <div class-'box-love'>
+        <h3> Bạn Có yêu Mình Không?</h3>
+        <span>Bạn có yêu mình không</span>
+       <div class=' box'>
+       <button id="love">Yêu</button>
+        <button id="no-love">Không Yêu</button>
+     </div>
+     </div>
+     <script>
+         var love = document.getElementById("love");
+var no_love =document.getElementById("no-love");
+
+love.addEventListener("click", myFunction);
+function myFunction(){
+ alert('Mình Biết Mà ahihi')
+}
+
+no_love.addEventListener("mouseover",lovefunction);
+function lovefunction(){
+   no_love.classList.toggle('move')
+}
+     </script>
+</body>
+</html>
